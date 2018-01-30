@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .search-block{
+      margin: 10px auto;
+      width: 50%;
+      display: flex
+    }
+    .input-group{
+      flex-grow: 1;
+      display: block !important;
+    }
+    .navbar-collapse{
+      background-color: black
+    }
+    .navbar-collapse .brand{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .nav>li{
+      display: inline-block;
+    }
+    .form-control{
+      height: 50px
+    }
+    th:last-child{
+      display: none
+    }
+    td:last-child{
+      display: none
+    }
+    table.hovertable{
+      background-color: black
+    }
+    @media(max-width: 768px){
+      .search-block{
+        width:100%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="bs-navbar" class="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li role="presentation" class="brand"><a href="#">聚视屏</a></li>
+          <li role="presentation" class="active"><a href="#">影视</a></li>
+        <!--   <li role="presentation"><a href="#">`</a></li>
+          <li role="presentation"><a href="#">Messages</a></li> -->
+        </ul>
+      </nav>
+      <div class="form-inline row">
+        <div class="search-block">
+          <div class="input-group">
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="请输入视频的URL">
+          </div>
+          <button class="btn btn-default submit" type="submit">立即播放</button>
+        </div>
+        
+
+      </div>
+      <div align="center">
+  <table class="hovertable table-bordered">
+    <tbody><tr>
+      <th width="150"><font color="ffffff">支持接口</font></th>
+      <th width="800"><font color="ffffff">接口地址[仅支持url地址解析] </font></th>
+      <th width="100"><font color="ffffff"><strong>是否支持VIP</strong></font></th>
+      <th width="100"><font color="ffffff">服务器状态</font></th>
+    </tr>
+    <!-- 结束 -->
+  
+  
+        <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';" style="background-color: rgb(255, 255, 255);">
+      <td><center><img src="./img/youkulogo.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://v.youku.com/v_show/id_XMjg5NzgyNjA5Mg==.html</td>
+      <td><center><img src="./img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://v.youku.com/v_show/id_XMjg5NzgyNjA5Mg==.html" title="普通视频正常"><img src="/img/jxok.png" alt="优酷普通视频正常"></a>
+      <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://v.youku.com/v_show/id_XMTY0NzM3Nzk4NA==.html" title="VIP视频正常"><img src="/img/jxok.png" alt="优酷电视剧VIP视频正常"></a>
+       <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://v.youku.com/v_show/id_XMjk3NDI1MTcwNA==.html" title="VIP视频正常"><img src="/img/jxok.png" alt="优酷VIP视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+      
+  
+   <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';" style="background-color: rgb(255, 255, 255);">
+      <td><center><img src="/img/tudoulogo.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://video.tudou.com/v/XMjc2NjI0Mjc0NA==.html</td>
+       <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://video.tudou.com/v/XMjc2NjI0Mjc0NA==.html" title="土豆普通视频正常"><img src="/img/jxok.png" alt="土豆普通视频正常"></a>
+      <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://video.tudou.com/v/XMjcwNzM5NDU2MA==.html" title="土豆VIP视频正常"><img src="/img/jxok.png" alt="土豆VIP视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+<!-- 开始 
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/tudouyun.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=265579455</td>
+       <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=265579455" title="土豆云视频正常"><img src="/img/jxok.png" alt="土豆云视频正常"></a>
+      </center></td>    
+结束 -->
+  
+    
+        <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';" style="background-color: rgb(255, 255, 255);">
+      <td><center><img src="/img/iqiyilogo.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.iqiyi.com/v_19rr96agog.html</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td>
+      <center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.iqiyi.com/v_19rr96agog.html" title="普通视频正常"><img src="/img/jxok.png" alt="普通视频正常"></a>
+      <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.iqiyi.com/v_19rrooho4g.html" title="电视剧VIP视频正常"><img src="/img/jxok.png" alt="VIP视频正常"></a>
+    <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.iqiyi.com/v_19rre19on4.html" title="电影VIP视频正常"><img src="/img/jxok.png" alt="VIP视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+
+        <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';" style="background-color: rgb(255, 255, 255);">
+      <td><center><img src="/img/hunantvlogo.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.mgtv.com/b/294339/3741659.html</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.mgtv.com/b/294339/3741659.html" title="普通视频正常"><img src="/img/jxok.png" alt="普通视频正常"></a>
+      <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.mgtv.com/b/313520/3984628.html" title="VIP视频正常"><img src="/img/jxok.png" alt="VIP视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+
+        <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';" style="background-color: rgb(255, 255, 255);">
+      <td><center><img src="/img/letvlogo.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.le.com/ptv/vplay/27286840.html</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.le.com/ptv/vplay/27286840.html" title="乐视普通视频正常"><img src="/img/jxok.png" alt="乐视普通视频正常"></a>
+      <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.le.com/ptv/vplay/26322741.html" title="乐视VIP视频正常"><img src="/img/jxok.png" alt="乐视VIP视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+<!-- 开始
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/leyun.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=64067217</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center>
+    <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=64067217" title="乐视云视频正常"><img src="/img/jxok.png" alt="乐视云视频正常"></a>
+    <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=MTI4MTM1NDM0" title="乐视云视频正常"><img src="/img/jxok.png" alt="乐视云视频正常"></a>
+      </center></td>
+结束 -->
+  
+
+        <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/qq.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=https://v.qq.com/x/cover/h188mdjtrh3up22.html</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=https://v.qq.com/x/cover/h188mdjtrh3up22.html" title="普通视频正常"><img src="/img/jxok.png" alt="普通视频正常"></a>
+      <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://v.qq.com/x/cover/g7jpq0qd0k8xdca/i0022j7rtex.html" title="电视剧VIP视频正常"><img src="/img/jxok.png" alt="VIP视频正常"></a>
+    <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=https://v.qq.com/x/cover/wi8e2p5kirdaf3j.html" title="电影VIP视频正常"><img src="/img/jxok.png" alt="VIP视频正常"></a>
+ 
+  </center></td>
+    <!-- 结束 --></tr>
+  
+  
+ <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';" style="background-color: rgb(255, 255, 255);">
+      <td><center><img src="/img/sohulogo.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://tv.sohu.com/20170527/n494680825.shtml</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://tv.sohu.com/20170527/n494680825.shtml" title="搜狐视频正常"><img src="/img/jxok.png" alt="普通视频正常"></a>
+      <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=https://film.sohu.com/album/9386481.html" title="VIP视频正常"><img src="/img/jxok.png" alt="VIP视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+
+
+ <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';" style="background-color: rgb(255, 255, 255);">
+      <td><center><img src="/img/pptvlogo.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://v.pptv.com/show/59ibibPaULe7kcmgI.html</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://v.pptv.com/show/59ibibPaULe7kcmgI.html" title="PPTV视频正常"><img src="/img/jxok.png" alt="普通视频正常"></a>
+       <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://v.pptv.com/show/qibbZVr4klNI1sxs.html" title="VIP视频正常"><img src="/img/jxok.png" alt="VIP视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+
+        <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';" style="background-color: rgb(255, 255, 255);">
+      <td><center><img src="/img/ykcloud.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=COTgyODkwMA</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=COTgyODkwMA" title="C值正常"><img src="/img/jxok.png" alt="C值正常"></a>
+      <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=5881deff0cf2eb24f575278a" title="58值正常"><img src="/img/jxok.png" alt="58值正常"></a>
+      <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=59683c7c0cf22b644f13cf8a" title="59值正常"><img src="/img/jxok.png" alt="58值正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+
+   <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';" style="background-color: rgb(255, 255, 255);">
+      <td><center><img src="/img/acfun.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.acfun.cn/v/ac2720630</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.acfun.cn/v/ac2720630" title="ACfun视频正常"><img src="/img/jxok.png" alt="普通视频正常"></a></center></td>
+    <!-- 结束 --></tr>
+
+    
+
+<!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';" style="background-color: rgb(255, 255, 255);">
+      <td><center><img src="/img/funlogo.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://v.yinyuetai.com/video/2769045</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://v.yinyuetai.com/video/2769045" title="音悦台视频正常"><img src="/img/jxok.png" alt="音悦台视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+  
+<!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/yy.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.yy.com/shenqu/play/id_1082591479532524676.html</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.yy.com/shenqu/play/id_1082591479532524676.html" title="YY神曲视频正常"><img src="/img/jxok.png" alt="音悦台视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+<!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/bilibili.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.bilibili.com/video/av8268711</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.bilibili.com/video/av8268711" title="哔哩哔哩视频正常"><img src="/img/jxok.png" alt="音悦台视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+<!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/wasu.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=https://www.wasu.cn/Play/show/id/9190792</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=https://www.wasu.cn/Play/show/id/9190792" title="华数VIP视频正常"><img src="/img/jxok.png" alt="音悦台视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+<!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/163.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://open.163.com/movie/2015/11/9/A/MB8DMQ96B_MB8DO5U9A.html</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://open.163.com/movie/2015/11/9/A/MB8DMQ96B_MB8DO5U9A.html" title="网易公开课视频正常"><img src="/img/jxok.png" alt="音悦台视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+<!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';" style="background-color: rgb(255, 255, 255);">
+      <td><center><img src="/img/56.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.56.com/u57/v_MTQxODAwNjk0.html</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.56.com/u57/v_MTQxODAwNjk0.html" title="56视频正常"><img src="/img/jxok.png" alt="音悦台视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+<!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/fun.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.fun.tv/vplay/g-210266/</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.fun.tv/vplay/g-210266/" title="风行视频正常"><img src="/img/jxok.png" alt="音悦台视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+  <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/m3u8.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://dy2.jsyunbf.com/20171023/UrROLy8k/index.m3u8</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://dy2.jsyunbf.com/20171023/UrROLy8k/index.m3u8" title="M3U8视频正常"><img src="/img/jxok.png" alt="M3U8视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+  <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/mp4.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://mvvideo2.meitudata.com/57ad6b2331bc9122.mp4</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://mvvideo2.meitudata.com/57ad6b2331bc9122.mp4" title="MP4视频正常"><img src="/img/jxok.png" alt="MP4视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+  <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/toutiao.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.toutiao.com/a6411327209693315330/</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.toutiao.com/a6411327209693315330/" title="今日头条视频正常"><img src="/img/jxok.png" alt="MP4视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+  <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/daum.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=v9196A4JJZrZ4Vy4VJCMA6P</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=v9196A4JJZrZ4Vy4VJCMA6P" title="daum视频正常"><img src="/img/jxok.png" alt="MP4视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+  <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/sina.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://video.sina.com.cn/view/251134258.html</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://video.sina.com.cn/view/251134258.html" title="新浪视频视频正常"><img src="/img/jxok.png" alt="MP4视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+  <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/weibo.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://weibo.com/tv/v/F1AORDRNy?from=vfun</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://weibo.com/tv/v/F1AORDRNy?from=vfun" title="微博视频视频正常"><img src="/img/jxok.png" alt="MP4视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+  <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/wl.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.vlook.cn/show/qs/YklkPTQ2Njk4Mzk=</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.vlook.cn/show/qs/YklkPTQ2Njk4Mzk=" title="微录客视频正常"><img src="/img/jxok.png" alt="微录客视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+  <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/mp.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.meipai.com/media/542797580</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.meipai.com/media/542797580" title="美拍视频正常"><img src="/img/jxok.png" alt="美拍视频正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+  <!-- 开始 --><tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/baidu.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=/baiduyun/余罪/第二季%2FS02E12.mp4&amp;t=-1</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=/baiduyun/余罪/第二季%2FS02E12.mp4&amp;t=-1" title="百度网盘正常"><img src="/img/jxok.png" alt="百度网盘正常正常"></a>
+      </center></td>
+    <!-- 结束 --></tr>
+  
+<!--开始-->
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/2mm.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://v.28a.im/f241</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://v.28a.im/f241" title="2MM视频正常"><img src="/img/jxok.png" alt="2MM视频正常"></a>
+      </center></td>
+<!-- 结束 --></tr>
+
+<!--开始-->
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/huya.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://ahuya.duowan.com/play/10442596.html</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://ahuya.duowan.com/play/10442596.html" title="虎牙视频正常"><img src="/img/jxok.png" alt="虎牙视频正常"></a>
+      </center></td>
+<!-- 结束 --></tr>
+
+<!--开始-->
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/longzhu.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://v.longzhu.com/1776225/v/1975517?from=hotleft</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://v.longzhu.com/1776225/v/1975517?from=hotleft" title="龙珠视频正常"><img src="/img/jxok.png" alt="龙珠视频正常"></a>
+      </center></td>
+<!-- 结束 --></tr>
+
+<!--开始-->
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/tangdou.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://www.tangdou.com/v92/dAOEOYOjwT2T0Q2.html</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://www.tangdou.com/v92/dAOEOYOjwT2T0Q2.html" title="糖豆视频正常"><img src="/img/jxok.png" alt="糖豆视频正常"></a>
+      </center></td>
+<!-- 结束 --></tr>
+
+<!--开始-->
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/migu.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=630300937&amp;type=migu</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center><a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=630300937&amp;type=migu" title="咪咕视频正常"><img src="/img/jxok.png" alt="咪咕视频正常"></a>
+      </center></td>
+<!-- 结束 --></tr>
+
+<!--开始-->
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#FFFFFF';">
+      <td><center><img src="/img/m1905.png"></center></td>
+      <td>http://api.baiyug.cn/vip/index.php?url=http://vip.1905.com/play/1000736.shtml</td>
+      <td><center><img src="/img/ok.png"></center></td>
+      <td><center>
+    <a target="_blank" href="http://api.baiyug.cn/vip/index.php?url=http://vip.1905.com/play/1000736.shtml" title="M1905视频正常"><img src="/img/jxok.png" alt="M1905视频正常"></a>
+      </center></td>
+<!-- 结束 --></tr>
+  
+  </tbody></table>
+</div>
+      
+    </div>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(".submit").click(function(){
+        var baseLink = $('#basic-url').val();
+        window.open('http://api.baiyug.cn/vip/index.php?url='+baseLink);
+      })
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
