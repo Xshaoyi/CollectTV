@@ -1,0 +1,67 @@
+<apex:page Controller="MyAccountController" sidebar="false" showHeader="false">
+<apex:includeScript value=""/>
+<apex:stylesheet value="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+<apex:pageBlock id="view">
+<apex:form >
+<apex:actionFunction name="changeToEdit" action="{!changeToEdit}" reRender="view,edit">
+    <apex:param name="firstParam" assignTo="{!myid}" value="" />
+</apex:actionFunction>
+<apex:actionFunction name="deleteFuc" action="{!deleteRecord}" reRender="view">
+    <apex:param name="firstParam" assignTo="{!myid}" value="" />
+</apex:actionFunction>
+<apex:actionFunction name="SortByName" action="{!SortByName}" reRender="view">
+    
+</apex:actionFunction>
+</apex:form>
+<apex:outputLink value="{!URLFOR($Action.Account.New)}" styleClass="btn">
+New Account
+</apex:outputLink>
+<apex:form rendered="{! mode=='view'}">
+<apex:pageBlockTable value="{!accounts}" var="item">
+    <apex:column headerValue="Action">
+        <apex:panelGrid columns="3" cellpadding="10%" cellspacing="0"> 
+        <apex:outputLink value="javascript:void(0)" onclick="changeToEdit('{!item.id}')" style="color:blue">Edit
+        </apex:outputLink>
+         <apex:outputLink value="javascript:if (window.confirm('Are you sure to delete the record?')) deleteFuc('{!item.id}');" style="color:blue">
+            Delete
+        </apex:outputLink>   
+        </apex:panelGrid>
+    </apex:column>
+    <apex:column headerValue="Account Name">
+    <apex:facet name="header" >
+        <p onclick="SortByName()" style="cursor:pointer">
+        Account Name <span class="{!IF(sortOrder,'glyphicon glyphicon-arrow-down','glyphicon glyphicon-arrow-up')} " />
+        </p>
+    </apex:facet>
+        <apex:outputLink value="{!URLFOR($Action.Account.View, item.id)}">{!item.Name}</apex:outputLink>
+    </apex:column>
+    <apex:column value="{!item.Phone}"/>
+    <apex:column value="{!item.Type}"/>
+    <apex:column headerValue="Account Owner Alias" >
+        <apex:outputLink value="/{!item.owner.id}">
+        {!item.owner.alias}
+        </apex:outputLink>
+    </apex:column>
+</apex:pageBlockTable>
+</apex:form>
+</apex:pageBlock>
+<apex:form id="edit" >
+
+    <apex:pageBlock title="My Content" mode="edit" rendered="{! mode=='edit'}" >
+        <apex:pageBlockButtons >
+            <apex:commandButton action="{!save}" value="Save" reRender="view,edit"/>
+            <apex:commandButton value="Cancle" action="{!cancle}" reRender="view,edit"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="My Content Section" columns="2">
+            <apex:inputField value="{!account.name}"/>
+            <apex:inputField value="{!account.phone}"/>
+            <apex:inputField value="{!account.type}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+
+</apex:form>
+<script type="text/javascript">
+document.write(location.pathname);
+</script>
+
+</apex:page>

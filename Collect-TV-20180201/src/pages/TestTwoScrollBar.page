@@ -1,0 +1,61 @@
+<apex:page showHeader="false"  standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0 ">
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0"/>
+		<apex:stylesheet value="{!URLFOR($Resource.SAMS, 'SAMS/css/bootstrap.css')}" />
+		<apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" />
+    	<apex:includeScript value="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" />
+		<style>
+			.top{
+				height:900px;
+			}
+			.middle{
+				height: 200px
+			}
+			.modalbody{
+				height:400px;
+				overflow: auto;
+			}
+			.modalbody p{
+				height: 500px;
+				background-color: green
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+		</div>
+		<div class="middle">
+			<a id ='btn' >
+				test
+			</a>
+		</div>
+		<div class="bottom">
+		</div>
+	</body>
+	<div class="modal" id ="modal">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+		      	<div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">Modal title</h4>
+			    </div>
+			    <div class="modal-body">
+			    	<div class="modalbody">
+			        	<p>One fine body&hellip;</p>
+			        </div>
+			    </div>
+		        <div class="modal-footer">
+		            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		            <button type="button" class="btn btn-primary">Save changes</button>
+		        </div>
+		    </div><!-- /.modal-content -->
+	  	</div><!-- /.modal-dialog -->
+	</div>
+	<script>
+		$('#btn').click(function (){
+			$('#modal').modal('show');
+		});
+	</script>
+</html>
+</apex:page>

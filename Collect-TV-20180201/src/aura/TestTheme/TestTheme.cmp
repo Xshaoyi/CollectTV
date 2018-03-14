@@ -1,0 +1,9 @@
+<!--
+ - Created by yshao009 on 6/7/17.
+ -->
+
+<aura:component implements="forceCommunity:themeLayout">
+    <div id="body" class="contentBody">
+            {!v.body}
+    </div>
+</aura:component>

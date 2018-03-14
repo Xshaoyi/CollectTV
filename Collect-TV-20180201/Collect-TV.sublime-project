@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "file_exclude_patterns": [
+                "*.sublime-project"
+            ], 
+            "path": "C:\\Users\\yishao\\Documents\\GitHub\\CollectTV/Collect-TV-20180201", 
+            "folder_exclude_patterns": [
+                ".templates"
+            ]
+        }
+    ]
+}

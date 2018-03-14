@@ -1,0 +1,13 @@
+<apex:page sidebar="false">
+    <apex:pageBlock title="A Block Title">
+        <apex:pageBlockSection title="A Section Title">
+        I'm three components deep!
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="A New Section">
+       
+        {! $User.FirstName & ' ' & $User.LastName}
+        {!day(today())}
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+
+</apex:page>

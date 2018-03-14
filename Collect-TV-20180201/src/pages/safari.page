@@ -1,0 +1,61 @@
+<apex:page showHeader="false"  standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0 ">
+	<html>
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0"/>
+		<head>
+			<style>
+				.container{
+					height: 100vh;
+					display: flex;
+					border: 1px solid black;
+				}
+				.inner-container{
+					width: 50%;
+
+				}
+				.content{
+					height: calc(100% - 52px);
+					display: flex;
+					background-color: yellow;
+				}
+				.content span{
+					margin: auto;
+				}
+				.content div{
+					margin: auto;
+					display: block;
+					height: 18px;
+					width: 50px;
+				}
+				.header{
+					text-align: center;
+					border: 1px solid black;
+				}
+				.center{
+					width: 50px;
+					height: 50px;
+					margin: auto;
+					background-color: red;
+				}
+				body{
+					margin: 0px;
+				}
+			</style>
+		</head>
+		<body class="body">
+			<div class="container">
+				<div class="inner-container">
+					<p class="header">header</p>
+					<div class="content">
+						<div >1234</div>
+					</div>
+				</div>
+				<div class="inner-container">
+					<p class="header">header</p>
+					<div class="content">
+						<span>5678</span>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
+</apex:page>

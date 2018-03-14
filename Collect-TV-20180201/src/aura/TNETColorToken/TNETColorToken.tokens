@@ -1,0 +1,28 @@
+<!--
+ - Created by yshao009 on 3/16/17.
+ -->
+
+<aura:tokens extends="force:base">
+    <aura:token name="PrimaryRed" value="#D2202F"></aura:token>
+    <aura:token name="PrimaryRedHover" value="#f13b4a"></aura:token>
+    <aura:token name="PrimaryBlue" value="#17468F"></aura:token>
+    <aura:token name="PrimaryBlack" value="#404041"></aura:token>
+    <aura:token name="SecondaryGrey" value="#766a62"></aura:token>
+    <aura:token name="SecondaryRed" value="#F13B4A"></aura:token>
+    <aura:token name="SecondaryBlue" value="#2260B9"></aura:token>
+    <aura:token name="SecondaryLightGrey" value="#D5D2CA"></aura:token>
+    <aura:token name="FAQBackground" value="#cdc9cb"></aura:token>
+    <aura:token name="HeaderFont" value="'Titillium Web', sans-serif"></aura:token>
+    <aura:token name="BodyFont" value="'Roboto', sans-serif"></aura:token>
+
+    <aura:token name="HeaderPartHeight" value="294px"></aura:token>
+    
+    
+    <!-- common -->
+    <aura:token name="c01" value="{! colorTextDefault}" description="Text Color" />
+    <aura:token name="c02" value="{! colorTextLabel}" description="Detail Text Color" />
+    <aura:token name="c03" value="{! colorBrand}" description="Action Color" />
+    <aura:token name="c04" value="{! colorTextLink}" description="Link Color" />
+    <aura:token name="c05" value="{! colorTextButtonBrand}" description="Overlay Text Color" />
+    <aura:token name="c06" value="{! colorBorder}" description="Border Color" />
+</aura:tokens>

@@ -1,0 +1,47 @@
+<apex:page showHeader="false"  standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0 ">
+<html>
+		
+		<head>
+			<apex:includeScript value="{!URLFOR($Resource.SAMS, 'SAMS/js/jquery.min.js')}" />
+			<apex:stylesheet value="{!URLFOR($Resource.SAMS, 'SAMS/css/bootstrap.css')}" />
+			<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0"/>
+			<style>
+				body,html{
+					height: 100%;
+					margin: 0;
+				}
+				.container{
+					height: 180%;
+				}
+				.top{
+					height: 10%;
+					background-color: blue;
+				}
+				.bot{
+					background-color: red;
+					height: 100%;
+				}
+				.bot .btn{
+					position: absolute;
+					bottom: 0px;
+				}
+				.btn{}
+			</style>
+		</head>
+		<body class="body">
+			<div class="container">
+				<div class="top">
+					<input type="text"></input>
+				</div>
+				<div class="bot">
+					<button class="btn">OK</button>
+				</div>
+			</div>
+		</body>
+		<script>
+			$(".btn").on('click',function(){
+				//alert('a');
+			});
+		</script>
+	</html>
+</apex:page>

@@ -1,0 +1,116 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false">
+<html lang="zh-CN">
+  <head>
+      <meta name="baidu_union_verify" content="6043a78918b9dec09e1d7600deb61008"/>
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>聚视频</title>
+
+    <!-- Bootstrap -->
+      <apex:stylesheet value="{!URLFOR($Resource.Resource, 'CollectTV/css/bootstrap.min.css')}"/>
+      
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .search-block{
+      margin: 10px auto;
+      width: 50%;
+      display: flex
+    }
+    .input-group{
+      flex-grow: 1;
+      display: block !important;
+    }
+    .navbar-collapse{
+      background-color: black
+    }
+    .navbar-collapse .brand{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .nav>li{
+      display: inline-block;
+    }
+    .form-control{
+      height: 50px
+    }
+    th:last-child{
+      display: none
+    }
+    td:last-child{
+      display: none
+    }
+    table.hovertable{
+      background-color: black
+    }
+    @media(max-width: 768px){
+      .search-block{
+        width:100%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="bs-navbar" class="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li role="presentation" class="brand"><a href="#">聚视屏</a></li>
+          <li role="presentation" class="active"><a href="#">影视</a></li>
+        <!--   <li role="presentation"><a href="#">`</a></li>
+          <li role="presentation"><a href="#">Messages</a></li> -->
+        </ul>
+      </nav>
+      <div class="form-inline row">
+        <div class="search-block">
+          <div class="input-group">
+              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="请输入视频的URL"/>
+          </div>
+          <button class="btn btn-default submit" type="submit">立即播放</button>
+        </div>
+        
+
+      </div>
+      <div align="center">
+  
+</div>
+      
+    </div>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+        var search = window.location.search;
+        if(search){
+          var reg = /url=(.+)/;
+          if(reg.test(search)){
+            var url = (reg.exec(search))[1];
+            $('#basic-url').val(url);
+          }
+        }
+        $(".submit").click(function(){
+          var baseUrl = 'http://jx.aeidu.cn/index.php?url=';
+          var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+          if(!isMobile){
+              baseUrl = 'http://api.baiyug.cn/vip/index.php?url='
+          }
+          var baseLink = $('#basic-url').val();
+          window.open(baseUrl+baseLink);
+        })
+      })
+      
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+</apex:page>

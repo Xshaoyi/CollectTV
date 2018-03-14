@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>TNETFileNotFound</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNETFileNotFound</shortDescription>
+        <value>Sorry, you&apos;ve reached an invalid page. Click the logo above to access the TECHNET Professional Website.   If this page was bookmarked, please update your bookmark accordingly.</value>
+    </labels>
+    <labels>
+        <fullName>TNETOrderFormDisclaimer</fullName>
+        <categories>Disclaimer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNETOrderFormDisclaimer</shortDescription>
+        <value>Order total does not include shipping and handling costs</value>
+    </labels>
+    <labels>
+        <fullName>TNETShoppingCardEmpty</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNETShoppingCardEmpty</shortDescription>
+        <value>Your shopping cart is empty</value>
+    </labels>
+    <labels>
+        <fullName>TNETTrackingPixel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNETTrackingPixel</shortDescription>
+        <value>&lt;iframe src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-5QHJLLL&quot; 
+height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;</value>
+    </labels>
+    <labels>
+        <fullName>TNET_CB_Send_To_Address</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CareerBuilder Send To Address</shortDescription>
+        <value>AAPUATTesting@gmail.com</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Career_Builder_Email_Id</fullName>
+        <categories>Emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Career Builder Email Id</shortDescription>
+        <value>TNET_Career_Builder_Email</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Chatter_Group_filter_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET Chatter Group filter ID</shortDescription>
+        <value>00Ba000000A897eEAB</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Communities_URL</fullName>
+        <categories>Communities</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Communities URL</shortDescription>
+        <value>devb3-dev-technet-dev.cs71.force.com/members</value>
+    </labels>
+    <labels>
+        <fullName>TNET_ContactUsEmailTemplateId</fullName>
+        <categories>Emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContactUsEmailTemplateId</shortDescription>
+        <value>00X4D000000QFm5</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Content_URL</fullName>
+        <categories>Document</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Content URL</shortDescription>
+        <value>aap-prod--DEVB3.cs71</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Document_Folder_Id</fullName>
+        <categories>Document</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Document Folder Id</shortDescription>
+        <value>00l4D000000Di12</value>
+    </labels>
+    <labels>
+        <fullName>TNET_FindShop_PlaceHolder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET FindShop PlaceHolder</shortDescription>
+        <value>Enter zip code, city, state, or full address</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Find_shop</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET Find shop</shortDescription>
+        <value>TECHNET Service Centers found near</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Form_Status_Enrolled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET_Form_Status_Enrolled</shortDescription>
+        <value>Enrolled</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Google_Api_Key</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET Google Api Key</shortDescription>
+        <value>AIzaSyCZjxlFjQzfUPNKGdCg7cycHx3_yviRCOI</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Member_Login_Link</fullName>
+        <categories>Member Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Member Login Link</shortDescription>
+        <value>/members/s/login</value>
+    </labels>
+    <labels>
+        <fullName>TNET_OrderFormSendToEmail</fullName>
+        <categories>Emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET OrderFormSendToEmail</shortDescription>
+        <value>mohit.jasani@pwc.com</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Order_Form_Email_Id</fullName>
+        <categories>Emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET Order Form Email Id</shortDescription>
+        <value>00X4D000000QKwh</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Profile_photo_suffix</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET Profile photo suffix</shortDescription>
+        <value>_TECHNET_Image</value>
+    </labels>
+    <labels>
+        <fullName>TNET_RoadHazardEmailId</fullName>
+        <categories>Emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RoadHazardEmailId</shortDescription>
+        <value>00X4D000000QFm6</value>
+    </labels>
+    <labels>
+        <fullName>TNET_RoadHazardSendFromAddress</fullName>
+        <categories>Emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RoadHazardSendFromAddress</shortDescription>
+        <value>AAPUATTesting@gmail.com</value>
+    </labels>
+    <labels>
+        <fullName>TNET_RoadHazardSendToAddress1</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RoadHazardSendToAddress1</shortDescription>
+        <value>marika.nakamoto@gmail.com</value>
+    </labels>
+    <labels>
+        <fullName>TNET_RoadHazardSendToAddress2</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RoadHazardSendToAddress2</shortDescription>
+        <value>mohit.jasani@pwc.com</value>
+    </labels>
+    <labels>
+        <fullName>TNET_SendToAddress</fullName>
+        <categories>Email Address</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContactUsSendToAddress</shortDescription>
+        <value>mohit.jasani@pwc.com</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Shop_Profile_Img_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET Shop Profile Img Description</shortDescription>
+        <value>Used for Find Your Shop</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Site_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET Site Name</shortDescription>
+        <value>TECHNET Community</value>
+    </labels>
+    <labels>
+        <fullName>TNET_TECH_NET_ID_Prefix</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET TECH NET ID Prefix</shortDescription>
+        <value>a1C</value>
+    </labels>
+    <labels>
+        <fullName>TNET_Trigger_Bypass_Profile_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TNET Trigger Bypass Profile ID</shortDescription>
+        <value>00e30000000rsBk</value>
+    </labels>
+</CustomLabels>

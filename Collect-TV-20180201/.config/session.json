@@ -1,0 +1,19 @@
+{
+    "project name": "Collect-TV", 
+    "instance_url": "https://shao-dev-ed.my.salesforce.com", 
+    "partner_url": "https://shao-dev-ed.my.salesforce.com/services/Soap/u/36.0", 
+    "rest_url": "https://shao-dev-ed.my.salesforce.com/services/data/v36.0", 
+    "headers": {
+        "Content-Type": "application/json; charset=UTF-8", 
+        "Authorization": "OAuth 00D280000014WUx!ARAAQDrJpBlPIUpFDxFrRdUDJMg_k8ZqG9uP6TePmVRagfOINUslHH6esUknoq0WtpqIpsfjzOHWRmgWxkTqmQL.g2KE1iY8", 
+        "Accept": "application/json"
+    }, 
+    "apex_url": "https://shao-dev-ed.my.salesforce.com/services/Soap/s/36.0", 
+    "metadata_url": "https://shao-dev-ed.my.salesforce.com/services/Soap/m/36.0", 
+    "session_id": "00D280000014WUx!ARAAQDrJpBlPIUpFDxFrRdUDJMg_k8ZqG9uP6TePmVRagfOINUslHH6esUknoq0WtpqIpsfjzOHWRmgWxkTqmQL.g2KE1iY8", 
+    "success": true, 
+    "user_id": "00528000001C9MsAAK", 
+    "server_url": "https://shao-dev-ed.my.salesforce.com/services/Soap/u/5.0/00D280000014WUx", 
+    "time_stamp": "2018-02-01 21:40:32", 
+    "X-SFDC-Session": "00D280000014WUx!ARAAQDrJpBlPIUpFDxFrRdUDJMg_k8ZqG9uP6TePmVRagfOINUslHH6esUknoq0WtpqIpsfjzOHWRmgWxkTqmQL.g2KE1iY8"
+}

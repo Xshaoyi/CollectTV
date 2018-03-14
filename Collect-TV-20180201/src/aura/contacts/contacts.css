@@ -1,0 +1,57 @@
+.THIS .move{
+     
+                -webkit-transform: translate(200px, 0);
+                -moz-transform: translate(200px, 0);
+                -ms-transform: translate(200px, 0);
+                -o-transform: translate(200px, 0);
+                transform: translate(200px, 0); 
+    			background-color:yellow;
+            
+}
+.THIS .ready{
+     
+              -webkit-transition: -webkit-transform 0.4s ease;
+                -ms-transition: -ms-transform 0.4s ease;
+                transition: transform 0.4s ease;
+            
+}
+.THIS .mui-switch{
+width:52px;
+height:31px;
+border:1px solid #dfdfdf;
+border-radius:20px;
+-webkit-appearance:none;
+position:relative;
+outline:none;
+box-shadow: #dfdfdf 0 0 0 0 inset;
+transition:box-shadow 0.4s;
+}
+.THIS .mui-switch:before{
+content:'A';
+font-size:20px;
+width:29px;
+height:29px;
+left: 0;
+border-radius:20px;
+background-color: #fff;
+position: absolute;
+box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.4);
+text-align:center;
+
+}
+.THIS .mui-switch:checked {
+    border-color: #64bd63;
+    box-shadow: #64bd63 0 0 0 16px inset;
+    background-color: #64bd63;
+	transition:box-shadow 0.4s;
+}
+.THIS .mui-switch:checked:before {
+    left: 21px;
+	content:'B';
+}
+.THIS .mui-switch.mui-switch-animbg:before{
+transition:left 0.4s;
+}
+.THIS .mui-switch.mui-switch-animbg:checked:before{
+transition:left 0.4s;
+}
